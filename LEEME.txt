@@ -1,0 +1,17 @@
+TECNO SHOP BOLIVIA - PROYECTO ACADÉMICO
+
+Estructura:
+index.html
+catalogo.html
+CSS/stylelogin.css
+CSS/styleindex.css
+JS/scriptlogin.js
+JS/scriptindex.js
+
+Para probar:
+1. Abre index.html con Live Server en Visual Studio Code.
+2. Usa cliente / 1234 o admin / admin123.
+3. Agrega productos al carrito, revisa el total y prueba confirmar compra.
+4. Para salir, usa "Cerrar sesión".
+
+Nota: este inicio de sesión es una demostración académica del lado del navegador. No es una autenticación segura para un comercio real y no debe usarse para proteger datos reales.

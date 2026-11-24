@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TecnoShop Bolivia | Sistema de compras</title>
+  <link rel="stylesheet" href="CSS/styleindex.css">
+</head>
+<body>
+  <header class="header">
+    <button id="btnMenu" class="header__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuLateral">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="catalogo.html" class="header__logo">TecnoShop <small>Bolivia</small></a>
+    <div class="header__usuario">
+      <span id="saludo"></span>
+      <button id="btnSalir" class="btn-linea">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <div id="fondo" class="fondo" hidden></div>
+  <nav id="menuLateral" class="nav" aria-label="Categorías">
+    <button id="btnCerrar" class="nav__cerrar" aria-label="Cerrar menú">×</button>
+    <h2>Categorías</h2>
+    <ul>
+      <li><a href="#catalogo" data-filtro="todos" class="activo">Todos los productos</a></li>
+      <li><a href="#catalogo" data-filtro="computadoras">Computadoras</a></li>
+      <li><a href="#catalogo" data-filtro="celulares">Celulares</a></li>
+      <li><a href="#catalogo" data-filtro="audio">Audio</a></li>
+      <li><a href="#catalogo" data-filtro="accesorios">Accesorios</a></li>
+    </ul>
+  </nav>
+
+  <div class="layout">
+    <main class="main">
+      <section class="hero">
+        <p class="etiqueta">TECNOLOGÍA • CALIDAD • CONFIANZA</p>
+        <h1>Todo lo que necesitas, en un solo lugar.</h1>
+        <p>Descubre celulares, computadoras y accesorios tecnológicos con precios en bolivianos.</p>
+        <a href="#catalogo" class="btn">Ver productos</a>
+      </section>
+
+      <section id="catalogo" class="catalogo">
+        <div class="catalogo__cabecera">
+          <div>
+            <p class="sobre-titulo">NUESTRA TIENDA</p>
+            <h2 id="tituloCategoria">Todos los productos</h2>
+          </div>
+          <p id="contador"></p>
+        </div>
+        <div id="productos" class="productos"></div>
+      </section>
+    </main>
+
+    <aside class="aside">
+      <section class="caja">
+        <h2>🛒 Tu carrito</h2>
+        <p class="texto-ayuda">Productos seleccionados</p>
+        <ul id="listaCarrito" class="carrito"></ul>
+        <p class="total">Total: <strong id="total">Bs 0</strong></p>
+        <button id="btnVaciar" class="btn-linea btn-vaciar">Vaciar carrito</button>
+        <button id="btnComprar" class="btn btn-comprar">Confirmar compra</button>
+        <p id="mensajeCompra" class="mensaje-compra" aria-live="polite"></p>
+      </section>
+
+      <section class="caja caja--promo">
+        <span class="promo-icono">🚚</span>
+        <h2>Envío promocional</h2>
+        <p>Consulta las condiciones de entrega al realizar tu compra.</p>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 TecnoShop Bolivia. Proyecto académico.</p>
+    <p>HTML5 · CSS3 · JavaScript</p>
+  </footer>
+  <script src="JS/scriptindex.js"></script>
+</body>
+</html>

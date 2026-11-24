@@ -1,0 +1,29 @@
+:root{
+  --tinta:#10233F; --azul:#1769AA; --celeste:#38BDF8;
+  --fondo:#F2F6FB; --blanco:#FFFFFF; --gris:#64748B; --error:#B3261E;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--fondo);color:var(--tinta);min-height:100vh}
+.login{display:grid;grid-template-columns:1.1fr 1fr;min-height:100vh}
+.login__brand{background:linear-gradient(145deg,#0B1830,#123D70 65%,#1769AA);color:white;display:flex;flex-direction:column;justify-content:center;gap:1rem;padding:clamp(2rem,6vw,5rem);position:relative;overflow:hidden}
+.login__brand:after{content:"";position:absolute;width:340px;height:340px;border:1px solid #ffffff30;border-radius:50%;right:-100px;top:-100px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff05}
+.marca-superior{font-size:.8rem;letter-spacing:.2em;font-weight:700;color:#7DD3FC}
+.login__logo{font-size:clamp(3rem,7vw,6rem);line-height:.95;letter-spacing:-.06em;color:white}
+.login__logo span{color:#7DD3FC;font-size:.65em;letter-spacing:0}
+.login__brand p:last-child{max-width:32ch;font-size:1.1rem;line-height:1.6;color:#E2E8F0}
+.login__panel{display:flex;flex-direction:column;justify-content:center;padding:clamp(2rem,6vw,5rem);max-width:560px;width:100%;margin:auto}
+.login__panel h2{font-size:2rem;margin-bottom:.5rem}
+.subtitulo{color:var(--gris);margin-bottom:1.5rem}
+form{display:flex;flex-direction:column;gap:.5rem}
+label{font-weight:700;font-size:.95rem;margin-top:.75rem}
+input{width:100%;padding:.9rem 1rem;border:1.5px solid #CBD5E1;border-radius:9px;font:inherit;background:white;color:var(--tinta)}
+input:focus{outline:3px solid #38BDF855;border-color:var(--azul)}
+.campo-clave{position:relative}
+.campo-clave input{padding-right:4rem}
+.campo-clave button{position:absolute;right:.5rem;top:50%;transform:translateY(-50%);background:none;border:0;color:var(--azul);font:inherit;font-weight:700;cursor:pointer;padding:.4rem}
+.mensaje{min-height:1.4rem;margin-top:.5rem;color:var(--error);font-size:.92rem}
+.mensaje.ok{color:#167044}
+.btn{display:block;text-align:center;margin-top:.5rem;padding:.95rem 1rem;border:0;border-radius:9px;background:var(--azul);color:white;font:inherit;font-weight:700;cursor:pointer}
+.btn:hover{background:#0F4F86}
+.ayuda{margin-top:1.5rem;padding:1rem;background:#E5F2FF;border-radius:9px;color:#334155;font-size:.9rem;line-height:1.7}
+@media(max-width:760px){.login{grid-template-columns:1fr}.login__brand{min-height:250px;padding:2rem}.login__logo{font-size:3.5rem}.login__panel{padding:2rem 1.5rem}}

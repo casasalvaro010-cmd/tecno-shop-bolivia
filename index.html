@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión | TecnoShop Bolivia</title>
+  <link rel="stylesheet" href="CSS/stylelogin.css">
+</head>
+<body>
+  <main class="login">
+    <section class="login__brand">
+      <p class="marca-superior">TECNOLOGÍA PARA TODOS</p>
+      <h1 class="login__logo">TecnoShop<br><span>Bolivia</span></h1>
+      <p>Encuentra celulares, computadoras y accesorios para tu día a día.</p>
+    </section>
+
+    <section class="login__panel">
+      <h2>Ingresa a tu cuenta</h2>
+      <p class="subtitulo">Accede a nuestra tienda tecnológica.</p>
+      <form id="formLogin" novalidate>
+        <label for="usuario">Usuario o correo electrónico</label>
+        <input type="text" id="usuario" autocomplete="username" placeholder="Escribe tu usuario" required>
+
+        <label for="clave">Contraseña</label>
+        <div class="campo-clave">
+          <input type="password" id="clave" autocomplete="current-password" placeholder="Escribe tu contraseña" required>
+          <button type="button" id="verClave" aria-label="Mostrar contraseña">Ver</button>
+        </div>
+
+        <p id="mensaje" class="mensaje" role="alert" aria-live="polite"></p>
+        <button type="submit" class="btn">Ingresar a la tienda</button>
+      </form>
+      <p class="ayuda">Datos de prueba:<br><strong>cliente</strong> / <strong>1234</strong><br><strong>admin</strong> / <strong>admin123</strong></p>
+    </section>
+  </main>
+  <script src="JS/scriptlogin.js"></script>
+</body>
+</html>
